@@ -1,0 +1,49 @@
+[custom]
+
+ruleset=DIRECT,https://raw.githubusercontent.com/mcdp-adk/clash/master/DIRECT.list
+ruleset=🔯 故障转移,https://raw.githubusercontent.com/mcdp-adk/clash/master/fallback.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/mcdp-adk/clash/master/NodeChoose.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+ruleset=📢 谷歌,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
+ruleset=Ⓜ️ Xbox,https://raw.githubusercontent.com/mcdp-adk/clash/master/Xbox.list
+ruleset=Ⓜ️ Xbox,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Xbox.list
+ruleset=Ⓜ️ 微软云盘,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
+ruleset=📺 巴哈姆特,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
+ruleset=📺 哔哩哔哩,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+ruleset=📺 哔哩哔哩,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+ruleset=🎮 游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
+ruleset=🎮 游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
+ruleset=🎮 游戏平台,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=DIRECT,[]GEOIP,LAN
+ruleset=DIRECT,[]GEOIP,CN
+ruleset=🐟 漏网之鱼,[]FINAL
+
+custom_proxy_group=🚀 节点选择`select`[]🔯 故障转移`[]🇭🇰 香港`[]🇨🇳 台湾`[]🇸🇬 新加坡`[]🇯🇵 日本`[]🇺🇲 美国`.*
+custom_proxy_group=📺 哔哩哔哩`select`[]DIRECT`[]🇨🇳 台湾`[]🇭🇰 香港
+custom_proxy_group=Ⓜ️ Xbox`select`[]DIRECT`[]🚀 节点选择
+custom_proxy_group=Ⓜ️ 微软云盘`select`[]DIRECT`[]🚀 节点选择
+custom_proxy_group=📢 谷歌`select`[]🇺🇲 美国`[]🚀 节点选择
+custom_proxy_group=📺 巴哈姆特`select`[]🇨🇳 台湾
+custom_proxy_group=🎮 游戏平台`select`[]🚀 节点选择`[]DIRECT
+custom_proxy_group=🔯 故障转移`fallback`.*`http://www.gstatic.com/generate_204`180
+custom_proxy_group=🐟 漏网之鱼`select`[]🚀 节点选择`[]DIRECT
+custom_proxy_group=🇭🇰 香港`select`(香港)
+custom_proxy_group=🇨🇳 台湾`select`(台湾)
+custom_proxy_group=🇯🇵 日本`select`(日本)
+custom_proxy_group=🇺🇲 美国`select`(美国)
+custom_proxy_group=🇸🇬 新加坡`select`(新加坡)
+
+enable_rule_generator=true
+overwrite_original_rules=true
