@@ -5,7 +5,6 @@ DOMAIN-SUFFIX,emby.plusmedia.site
 DOMAIN-SUFFIX,api.huacloud.xyz
 DOMAIN-SUFFIX,api.sublink.dev
 DOMAIN-SUFFIX,renzhesubconverter.com
-DOMAIN-SUFFIX,media.mcdp.site
 DOMAIN-SUFFIX,cloud.mcdp.site
 IP-CIDR,129.226.30.149/32
 IP-CIDR,172.245.159.254/32
