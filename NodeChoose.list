@@ -11,4 +11,5 @@ DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,overleaf.com
 DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,raw.githubusercontent.com
 IP-CIDR,172.245.159.254/32
